@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android</string>
+    <string name="theme_demo_title">Theme mode demo</string>
+    <string name="theme_demo_description">Toggle day/night to see how the current theme adapts to edge-to-edge surfaces.</string>
+    <string name="theme_demo_switch_label">Choose your look</string>
+    <string name="theme_demo_current_mode">Currently using %1$s</string>
+    <string name="theme_demo_preview_title">Preview surface</string>
+    <string name="theme_demo_preview_body">Buttons, text, and containers follow Material 3 colors for the selected mode.</string>
+    <string name="theme_demo_cta">Primary action</string>
+    <string name="theme_mode_system">System</string>
+    <string name="theme_mode_light">Light</string>
+    <string name="theme_mode_dark">Dark</string>
+</resources>

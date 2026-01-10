@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">模板</string>
+    <string name="theme_demo_title">主题演示</string>
+    <string name="theme_demo_description">切换日间/夜间模式，查看当前主题在无边框方案下的适配效果。</string>
+    <string name="theme_demo_switch_label">选择外观</string>
+    <string name="theme_demo_current_mode">当前模式：%1$s</string>
+    <string name="theme_demo_preview_title">效果预览</string>
+    <string name="theme_demo_preview_body">按钮、文字与容器会随所选模式应用 Material 3 配色。</string>
+    <string name="theme_demo_cta">主要按钮</string>
+    <string name="theme_mode_system">跟随系统</string>
+    <string name="theme_mode_light">浅色</string>
+    <string name="theme_mode_dark">深色</string>
+</resources>
