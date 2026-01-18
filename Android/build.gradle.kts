@@ -1,7 +1,7 @@
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.CommonExtension
 import com.android.build.api.dsl.TestExtension
-import com.android.build.gradle.LibraryExtension
+import com.android.build.api.dsl.LibraryExtension
 import io.gitlab.arturbosch.detekt.Detekt
 import io.gitlab.arturbosch.detekt.extensions.DetektExtension
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
@@ -15,7 +15,6 @@ import kotlin.apply
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.android.library) apply false
-    alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.jvm) apply false
     alias(libs.plugins.kotlin.compose) apply false
 
@@ -67,23 +66,23 @@ val releaseSigningConfig: ReleaseSigningConfig? =
         )
     }
 
-fun CommonExtension<*, *, *, *, *, *>.configureAndroidDefaults() {
+fun CommonExtension.configureAndroidDefaults() {
     compileSdk = compileSdkVersion
-    defaultConfig {
+    defaultConfig.apply {
         minSdk = minSdkVersion
         testInstrumentationRunner = instrumentationRunner
     }
-    compileOptions {
+    compileOptions.apply {
         sourceCompatibility = javaVersion
         targetCompatibility = javaVersion
     }
-    lint {
+    lint.apply {
         abortOnError = true
         warningsAsErrors = true
         checkReleaseBuilds = true
         disable += "GradleDependency"
     }
-    packaging {
+    packaging.apply {
         resources {
             // Keep multi-release metadata; only exclude common license files
             excludes += setOf("META-INF/{AL2.0,LGPL2.1}")

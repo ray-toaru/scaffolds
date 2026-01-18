@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.App" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.App.Fullscreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Window 本身 -->
         <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- 系统栏透明 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- 图标颜色由系统/Compose 控制 -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
 </resources>
 

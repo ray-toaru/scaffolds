@@ -1,5 +1,5 @@
 [versions]
-agp = "8.13.2"
+agp = "9.0.0"
 kotlin = "2.3.0"
 coreKtx = "1.17.0"
 junit = "4.13.2"
@@ -12,8 +12,8 @@ uiTextGoogleFonts = "1.10.0"
 material = "1.13.0"
 
 uiautomator = "2.3.0"
-benchmarkMacroJunit4 = "1.4.1"
-baselineprofile = "1.4.1"
+benchmarkMacroJunit4 = "1.5.0-alpha01"
+baselineprofile = "1.5.0-alpha01"
 profileinstaller = "1.4.1"
 
 ktlint = "14.0.1"
@@ -46,7 +46,6 @@ detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 
